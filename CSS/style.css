@@ -1,0 +1,276 @@
+/*
+Theme Name: Benjy’s Theme 2.0
+Theme URI: http://www.benjystanton.co.uk
+Description: Benjy's super duper theme
+Version: 2.0
+Author: Benjy Stanton
+Author URI: http://www.benjystanton.co.uk
+Tags:
+*/
+
+@import "css/reset.css";
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* General =================================================== */
+
+body {
+	background-color:#2C333D;
+	color:#2C333D;
+	font: Normal 100% 'Lato', Helvetica, Arial, sans-serif;
+}
+
+.container {
+	margin:0 auto;
+	padding:1.875em 0 3.75em;
+	width: 90%;
+}
+
+section {
+	background-color: #fff;
+}
+
+/* Typography =================================================== */
+
+p {
+	font-size:1em;
+	line-height:1.5; /* 24px / 16px */
+	margin-bottom:1.5em; /* 24px / 16px */
+}
+
+h1, h2, h3 {
+	font-weight:900;
+}
+
+h1 {
+	font-size:2.5em; /* 40px / 16px */
+	line-height:1.2; /* 48px / 40px */
+	margin-bottom:.75em; /* 30px / 40px */
+	margin-top:.75em; /* 30px / 40px */
+}
+
+h1:first-of-type {
+	margin-top:0em;
+}
+
+h2 {
+	font-size:1.5em; /* 24px / 16px */
+	line-height:1.25; /* 30px / 24px */
+	margin-bottom:1em; /* 24px / 24px */
+	margin-top: 2em; /* 48px / 24px */
+}
+
+h3 {
+	font-size:1em;
+	line-height:1.5; /* 24px / 16px */
+	font-weight:900;
+	letter-spacing:-0.02em;
+}
+
+li {
+	font-size:1em;
+	line-height:1.5; /* 24px / 16px */
+	list-style-position: inside;
+}
+
+ol li {
+	list-style-type:decimal;
+}
+
+ul li {
+	list-style-type:disc;
+}
+
+ol,ul {
+	margin-bottom:1.5em; /* 24px / 16px */
+}
+
+blockquote p {
+	font-size:2em; /* 32px / 16px */ 
+	line-height:1.25; /* 42px / 32px */ 
+	margin-bottom:.75em; /* 24px / 32px */
+	margin-top:.75em; /* 24px / 32px */
+	font-weight:300;
+	font-style:italic;	
+	letter-spacing:-0.02em;
+}
+	
+p.meta {
+	color:#8d9893;	
+	font-size:.875em; /* 14px / 16px */ 
+	text-transform:uppercase;
+	letter-spacing:.1em;
+	margin-bottom: .428571429em; /* 6px / 16px */ 
+}
+
+p.meta + h1 {
+	margin-top: 0;
+}
+
+a {
+	color:#8CA717;
+	text-decoration:none;
+	border-bottom:1px solid #BFCC72;
+}
+
+::selection {
+	background: #8CA717;
+	color:#fff;
+	}
+
+/* Header =================================================== */
+
+header {
+	background-color:#EEEFE1;
+	color:#2C333D;
+}
+
+header h1 {
+	font-size:1em;
+	line-height:2.625; /* 42px / 16px */
+	font-weight:400;
+	margin-bottom: 0;
+}
+
+header h1 a {
+	border-bottom: none;
+	color:#2C333D;
+}
+
+header .container {
+	padding:.75em 0;
+}
+
+.logo {
+}
+
+/* Menu ======================================================= */
+
+.menu {
+	margin: 0;
+}
+
+#menu-primary li {
+	margin-right: 1em;
+	font-size:.875em; /* 14px / 16px */ 
+	line-height:3; /* 42px / 14px */
+	font-weight: 400;
+	text-transform: uppercase;
+	list-style-type:none;
+	display: inline-block;
+}
+
+#menu-primary li:last-child {
+	margin-right: 0;
+}
+
+#menu-primary li a {
+	border-bottom:none;
+	color: #8CA717;
+}
+
+/* Footer =================================================== */
+
+footer {
+	background-color:#2C333D;
+	color:#fff;
+}
+
+footer p {
+	color: #8691A1;
+}
+
+footer a {
+	border-bottom:none;
+	padding-bottom: 2px;
+}
+
+
+/* Article ======================================================= */
+
+.article {
+	border-top: #bec6c2 solid 1px;
+}
+
+.article h2 {
+	margin-top: 1.25em; /* 30px / 24px */
+	margin-bottom: .5em;
+}
+
+.article p {
+	margin-bottom: 1.875em; /* 30px / 16px */
+}
+
+.article:last-of-type {
+	margin-bottom: 3em; /* 48px / 16px */
+}
+
+a.previous {
+	float: right;
+}
+
+
+/* Media Queries ======================================================= */
+
+@media screen and (min-width: 600px) {
+
+	body {
+		font-size: 110%;
+	}
+
+	.container {
+		width: 70%;
+	}
+
+	.logo {
+		float:left;
+		width:30%;
+	}
+
+	.menu-header {
+	float:left;
+	width:70%;
+	}
+
+	.menu {
+		text-align: right;
+	}
+
+	li {
+		list-style-position: outside;
+	}
+
+}
+
+@media screen and (min-width: 900px) {
+
+	body {
+		font-size: 130%;
+	}
+
+	.container {
+		width: 60%;
+		max-width: 700px;
+	}
+
+}

@@ -207,15 +207,19 @@ footer {
 	color:#fff;
 }
 
+footer .container {
+	padding-bottom:1.875em;
+}
+
 footer p {
 	color: #8691A1;
+	margin-bottom: 0;
 }
 
 footer a {
 	border-bottom:none;
 	padding-bottom: 2px;
 }
-
 
 /* Article ======================================================= */
 
@@ -239,7 +243,6 @@ footer a {
 a.previous {
 	float: right;
 }
-
 
 /* Media Queries ======================================================= */
 
@@ -286,6 +289,10 @@ a.previous {
 	.container {
 		width: 60%;
 		max-width: 700px;
+	}
+
+	.main {
+		padding-top:3.75em;
 	}
 
 }

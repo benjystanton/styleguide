@@ -145,6 +145,15 @@ p.meta {
 	margin-bottom: .428571429em; /* 6px / 16px */ 
 }
 
+p.meta a {
+	color:#8d9893;
+	border-bottom:none;
+}
+
+p.meta a:hover {
+	border-bottom:1px solid #8d9893;
+}
+
 p.meta + h1 {
 	margin-top: 0;
 }

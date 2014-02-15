@@ -95,6 +95,7 @@ h3 {
 	font-size:1em;
 	line-height:1.5; /* 24px / 16px */
 	font-weight:600;
+	margin-bottom: .428571429em; /* 6px / 16px */ 
 }
 
 li {

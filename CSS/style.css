@@ -283,7 +283,6 @@ a.previous {
 
 	.menu-header {
 		float:left;
-		width:60%;
 	}
 
 	.menu {
@@ -292,7 +291,7 @@ a.previous {
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
 
 	body {
 		font-size: 110%;
@@ -300,6 +299,10 @@ a.previous {
 
 	.container {
 		width: 70%;
+	}
+
+	.menu-header {
+		float:right;
 	}
 
 	li {

@@ -133,7 +133,17 @@ blockquote cite {
 	text-transform:uppercase;
 	margin-bottom: 0;
 }
-	
+
+a {
+	color:#ad1a25;
+	text-decoration:none;
+	border-bottom:1px solid #d58c91;
+}
+
+a:hover, a:focus {
+	border-bottom:2px solid #ad1a25;
+}
+
 p.meta {
 	color:#8d9893;	
 	font-size:.875em; /* 14px / 16px */ 
@@ -146,18 +156,12 @@ p.meta a {
 	border-bottom:none;
 }
 
-p.meta a:hover {
-	border-bottom:1px solid #8d9893;
+p.meta a:hover, p.meta a:focus {
+	border-bottom:2px solid #8d9893;
 }
 
 p.meta + h1 {
 	margin-top: 0;
-}
-
-a {
-	color:#ad1a25;
-	text-decoration:none;
-	border-bottom:1px solid #d58c91;
 }
 
 ::selection {

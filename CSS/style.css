@@ -46,7 +46,7 @@ a img { border:none } /* Gets rid of IE's blue borders */
 /* General =================================================== */
 
 body {
-	background-color:#2C333D;
+	background-color:#fff;
 	color:#2C333D;
 	font: Normal 100% 'Lato', Helvetica, Arial, sans-serif;
 }
@@ -55,10 +55,6 @@ body {
 	margin:0 auto;
 	padding:1.875em 0 3.75em;
 	width: 90%;
-}
-
-section {
-	background-color: #fff;
 }
 
 /* Typography =================================================== */
@@ -194,11 +190,11 @@ header .container {
 
 /* Menu ======================================================= */
 
-.menu {
+header .menu {
 	margin: 0;
 }
 
-#menu-primary li {
+header #menu-primary li {
 	margin-right: 1em;
 	font-size:.875em; /* 14px / 16px */ 
 	line-height:3; /* 42px / 14px */
@@ -208,11 +204,11 @@ header .container {
 	display: inline-block;
 }
 
-#menu-primary li:last-child {
+header #menu-primary li:last-child {
 	margin-right: 0;
 }
 
-#menu-primary li a {
+header #menu-primary li a {
 	border-bottom:none;
 	color: #f6e8e9;
 }
